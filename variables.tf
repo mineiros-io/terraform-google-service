@@ -26,7 +26,7 @@ variable "disable_dependent_services" {
 }
 
 variable "disable_on_destroy" {
-  description = "(Optional) If true, disable the service when the terraform resource is destroyed. Defaults to true. May be useful in the event that a project is long-lived but the infrastructure running in that project changes frequently."
+  description = "(Optional) If true, disable the service when the terraform resource is destroyed. May be useful in the event that a project is long-lived but the infrastructure running in that project changes frequently."
   type        = bool
   default     = false
 }
