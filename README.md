@@ -1,7 +1,9 @@
 [<img src="https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg" width="400"/>](https://mineiros.io/?ref=terraform-google-service)
 
+[![Build Status](https://github.com/mineiros-io/terraform-google-service/workflows/Tests/badge.svg)](https://github.com/mineiros-io/terraform-google-service/actions)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mineiros-io/terraform-google-service.svg?label=latest&sort=semver)](https://github.com/mineiros-io/terraform-google-service/releases)
 [![Terraform Version](https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases)
-[![Google Provider Version](https://img.shields.io/badge/google-3.x-1A73E8.svg?logo=terraform)](https://github.com/terraform-providers/terraform-provider-google/releases)
+[![Google Provider Version](https://img.shields.io/badge/google-4-1A73E8.svg?logo=terraform)](https://github.com/terraform-providers/terraform-provider-google/releases)
 [![Join Slack](https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack)](https://mineiros.io/slack)
 
 # terraform-google-service
@@ -22,7 +24,6 @@ secure, and production-grade cloud infrastructure.
   - [Top-level Arguments](#top-level-arguments)
     - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
-    - [Extended Resource Configuration](#extended-resource-configuration)
 - [Module Attributes Reference](#module-attributes-reference)
 - [External Documentation](#external-documentation)
   - [Google Documentation](#google-documentation)
@@ -108,8 +109,6 @@ See [variables.tf] and [examples/] for details and use-cases.
   How long certain operations are allowed to take before being considered to have failed.
 
   Default is `{}`.
-
-#### Extended Resource Configuration
 
 ## Module Attributes Reference
 
