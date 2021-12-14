@@ -93,7 +93,7 @@ section {
         }
 
         variable "module_depends_on" {
-          type           = list(any)
+          type           = any
           readme_type    = "list(dependencies)"
           default        = []
           description    = <<-END
