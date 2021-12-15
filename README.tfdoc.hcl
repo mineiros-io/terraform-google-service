@@ -172,8 +172,6 @@ section {
     section {
       title   = "Google Documentation"
       content = <<-END
-        <!-- markdown-link-check-disable -->
-
       - https://cloud.google.com/service-usage/docs/overview
       END
     }
@@ -182,7 +180,6 @@ section {
       title   = "Terraform Google Provider Documentation"
       content = <<-END
         - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service
-        <!-- markdown-link-check-disable -->
       END
     }
   }

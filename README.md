@@ -122,20 +122,15 @@ The following attributes are exported in the outputs of the module:
 
   All service api attributes.
 
-<!-- all outputs in outputs.tf-->
-
 ## External Documentation
 
 ### Google Documentation
-
-<!-- markdown-link-check-disable -->
 
 - https://cloud.google.com/service-usage/docs/overview
 
 ### Terraform Google Provider Documentation
 
 - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service
-<!-- markdown-link-check-disable -->
 
 ## Module Versioning
 
