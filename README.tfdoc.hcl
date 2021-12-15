@@ -164,8 +164,6 @@ section {
       - **`service`**
 
         All service api attributes.
-
-      <!-- all outputs in outputs.tf-->
     END
   }
 
