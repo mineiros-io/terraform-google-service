@@ -24,7 +24,7 @@ secure, and production-grade cloud infrastructure.
   - [Top-level Arguments](#top-level-arguments)
     - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
-- [Module Attributes Reference](#module-attributes-reference)
+- [Module Outputs](#module-outputs)
 - [External Documentation](#external-documentation)
   - [Google Documentation](#google-documentation)
   - [Terraform Google Provider Documentation](#terraform-google-provider-documentation)
@@ -110,7 +110,7 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `{}`.
 
-## Module Attributes Reference
+## Module Outputs
 
 The following attributes are exported in the outputs of the module:
 
