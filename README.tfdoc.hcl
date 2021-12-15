@@ -33,7 +33,6 @@ header {
   }
 }
 
-
 section {
   title   = "terraform-google-service"
   toc     = true
@@ -41,7 +40,7 @@ section {
     A [Terraform] module for [Google Cloud Platform (GCP)][gcp].
 
     **_This module supports Terraform version 1
-    and is compatible with the Terraform Google Provider version 3._**
+    and is compatible with the Terraform Google Provider version 4._**
 
     This module is part of our Infrastructure as Code (IaC) framework
     that enables our users and customers to easily deploy and manage reusable,
@@ -182,7 +181,7 @@ section {
     }
 
     section {
-      title   = "Terraform Google Provider Documentation:"
+      title   = "Terraform Google Provider Documentation"
       content = <<-END
         - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service
         <!-- markdown-link-check-disable -->

@@ -11,7 +11,7 @@
 A [Terraform] module for [Google Cloud Platform (GCP)][gcp].
 
 **_This module supports Terraform version 1
-and is compatible with the Terraform Google Provider version 3._**
+and is compatible with the Terraform Google Provider version 4._**
 
 This module is part of our Infrastructure as Code (IaC) framework
 that enables our users and customers to easily deploy and manage reusable,
@@ -27,7 +27,7 @@ secure, and production-grade cloud infrastructure.
 - [Module Attributes Reference](#module-attributes-reference)
 - [External Documentation](#external-documentation)
   - [Google Documentation](#google-documentation)
-  - [Terraform Google Provider Documentation:](#terraform-google-provider-documentation)
+  - [Terraform Google Provider Documentation](#terraform-google-provider-documentation)
 - [Module Versioning](#module-versioning)
   - [Backwards compatibility in `0.0.z` and `0.y.z` version](#backwards-compatibility-in-00z-and-0yz-version)
 - [About Mineiros](#about-mineiros)
@@ -132,7 +132,7 @@ The following attributes are exported in the outputs of the module:
 
 - https://cloud.google.com/service-usage/docs/overview
 
-### Terraform Google Provider Documentation:
+### Terraform Google Provider Documentation
 
 - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service
 <!-- markdown-link-check-disable -->
