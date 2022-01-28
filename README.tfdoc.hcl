@@ -92,8 +92,7 @@ section {
         }
 
         variable "module_depends_on" {
-          type           = any
-          readme_type    = "list(dependencies)"
+          type           = list(dependency)
           default        = []
           description    = <<-END
             A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
@@ -155,15 +154,21 @@ section {
     title   = "Module Outputs"
     content = <<-END
       The following attributes are exported in the outputs of the module:
-
-      - **`module_enabled`**
-
-        Whether this module is enabled.
-
-      - **`service`**
-
-        All service api attributes.
     END
+
+    output "module_enabled" {
+      type        = bool
+      description = <<-END
+        Whether this module is enabled.
+      END
+    }
+
+    output "service" {
+      type        = object(service)
+      description = <<-END
+        All service api attributes.
+      END
+    }
   }
 
   section {

@@ -68,7 +68,7 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `true`.
 
-- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependencies)`)*<a name="var-module_depends_on"></a>
+- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
 
   A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
 
@@ -114,11 +114,11 @@ See [variables.tf] and [examples/] for details and use-cases.
 
 The following attributes are exported in the outputs of the module:
 
-- **`module_enabled`**
+- [**`module_enabled`**](#output-module_enabled): *(`bool`)*<a name="output-module_enabled"></a>
 
   Whether this module is enabled.
 
-- **`service`**
+- [**`service`**](#output-service): *(`object(service)`)*<a name="output-service"></a>
 
   All service api attributes.
 
