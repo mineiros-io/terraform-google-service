@@ -33,7 +33,7 @@ variable "disable_on_destroy" {
 
 variable "timeouts" {
   description = "(Optional) How long certain operations are allowed to take before being considered to have failed."
-  type        = any
+  type        = map(string)
   default     = {}
 }
 

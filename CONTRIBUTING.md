@@ -38,14 +38,14 @@ make sure the necessary hooks have been installed before you begin working
 ## Update the documentation
 
 We encourage you to update the documentation before writing any code (please see
-[Readme Driven Development]. This ensures the
+[Readme Driven Development]). This ensures the
 documentation stays up to date and allows you to think through the problem fully before you begin implementing any
 changes.
 
 ## Update the tests
 
 We also recommend updating the automated tests before updating any code
-(see [Test Driven Development].
+(see [Test Driven Development]).
 
 That means that you should add or update a test case, run all tests and verify
 that the new test fails with a clear error message and then start implementing
@@ -77,19 +77,14 @@ If everything looks good, they will merge the code and release a new version whi
 
 <!-- References -->
 
-<!-- markdown-link-check-disable -->
-
+[github flow]: https://docs.github.com/en/get-started/quickstart/github-flow
+[codeowners]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+[fork]: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+[commit]: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project
+[create a new branch]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository
+[create a pull request]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 [pull requests]: https://github.com/mineiros-io/terraform-google-service/pulls
 [pre-commit-file]: https://github.com/mineiros-io/terraform-google-service/blob/main/.pre-commit-config.yaml
-
-<!-- markdown-link-check-enable -->
-
-[github flow]: https://guides.github.com/introduction/flow/
-[codeowners]: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
-[fork]: https://help.github.com/en/github/getting-started-with-github/fork-a-repo
-[create a new branch]: https://guides.github.com/introduction/flow/
 [readme driven development]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
-[commit]: https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project
-[create a pull request]: https://help.github.com/articles/creating-a-pull-request/
 [semantic versioning (semver)]: https://semver.org/
 [test driven development]: https://en.wikipedia.org/wiki/Test-driven_development

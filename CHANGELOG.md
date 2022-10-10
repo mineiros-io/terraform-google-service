@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add unit tests
+
+### Removed
+
+- BREAKING: Remove support for Terraform before v1.0
+- BREAKING: Remove support for Terraform Google Provider before v4.0
+- BREAKING: Remove `module_enabled` output
+
 ## [0.0.2]
 
 ### Added
