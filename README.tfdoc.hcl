@@ -63,7 +63,7 @@ section {
 
       ```hcl
       module "terraform-google-service" {
-        source = "github.com/mineiros-io/terraform-google-service?ref=v0.0.2"
+        source = "github.com/mineiros-io/terraform-google-service?ref=v0.1.0"
 
         service = "datastore.googleapis.com"
       }
