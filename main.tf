@@ -1,4 +1,3 @@
-
 resource "google_project_service" "service" {
   count = var.module_enabled ? 1 : 0
 
@@ -10,8 +9,9 @@ resource "google_project_service" "service" {
   disable_on_destroy         = var.disable_on_destroy
 
   timeouts {
-    create = try(var.timeouts.create, "15m")
-    update = try(var.timeouts.update, "10m")
-    delete = try(var.timeouts.delete, "10m")
+    create = try(var.timeouts.create, null)
+    read   = try(var.timeouts.read, null)
+    update = try(var.timeouts.update, null)
+    delete = try(var.timeouts.delete, null)
   }
 }

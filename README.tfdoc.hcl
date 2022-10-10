@@ -81,31 +81,6 @@ section {
       title = "Top-level Arguments"
 
       section {
-        title = "Module Configuration"
-
-        variable "module_enabled" {
-          type        = bool
-          default     = true
-          description = <<-END
-            Specifies whether resources in the module will be created.
-          END
-        }
-
-        variable "module_depends_on" {
-          type           = list(dependency)
-          default        = []
-          description    = <<-END
-            A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
-          END
-          readme_example = <<-END
-            module_depends_on = [
-              google_network.network
-            ]
-          END
-        }
-      }
-
-      section {
         title = "Main Resource Configuration"
 
         variable "service" {
@@ -145,6 +120,59 @@ section {
           description = <<-END
             How long certain operations are allowed to take before being considered to have failed.
           END
+
+          attribute "create" {
+            type        = string
+            description = <<-END
+              How long a create operation is allowed to take before being considered to have failed.
+            END
+          }
+
+          attribute "read" {
+            type        = string
+            description = <<-END
+              How long a read operation is allowed to take before being considered to have failed.
+            END
+          }
+
+          attribute "update" {
+            type        = string
+            description = <<-END
+              How long an update operation is allowed to take before being considered to have failed.
+            END
+          }
+
+          attribute "delete" {
+            type        = string
+            description = <<-END
+              How long a delete operation is allowed to take before being considered to have failed.
+            END
+          }
+        }
+      }
+
+      section {
+        title = "Module Configuration"
+
+        variable "module_enabled" {
+          type        = bool
+          default     = true
+          description = <<-END
+            Specifies whether resources in the module will be created.
+          END
+        }
+
+        variable "module_depends_on" {
+          type           = list(dependency)
+          default        = []
+          description    = <<-END
+            A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
+          END
+          readme_example = <<-END
+            module_depends_on = [
+              google_network.network
+            ]
+          END
         }
       }
     }
@@ -155,13 +183,6 @@ section {
     content = <<-END
       The following attributes are exported in the outputs of the module:
     END
-
-    output "module_enabled" {
-      type        = bool
-      description = <<-END
-        Whether this module is enabled.
-      END
-    }
 
     output "service" {
       type        = object(service)

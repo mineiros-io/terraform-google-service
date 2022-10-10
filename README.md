@@ -22,8 +22,8 @@ secure, and production-grade cloud infrastructure.
 - [Getting Started](#getting-started)
 - [Module Argument Reference](#module-argument-reference)
   - [Top-level Arguments](#top-level-arguments)
-    - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
+    - [Module Configuration](#module-configuration)
 - [Module Outputs](#module-outputs)
 - [External Documentation](#external-documentation)
   - [Google Documentation](#google-documentation)
@@ -60,28 +60,6 @@ See [variables.tf] and [examples/] for details and use-cases.
 
 ### Top-level Arguments
 
-#### Module Configuration
-
-- [**`module_enabled`**](#var-module_enabled): *(Optional `bool`)*<a name="var-module_enabled"></a>
-
-  Specifies whether resources in the module will be created.
-
-  Default is `true`.
-
-- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
-
-  A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
-
-  Default is `[]`.
-
-  Example:
-
-  ```hcl
-  module_depends_on = [
-    google_network.network
-  ]
-  ```
-
 #### Main Resource Configuration
 
 - [**`service`**](#var-service): *(**Required** `string`)*<a name="var-service"></a>
@@ -110,13 +88,49 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `{}`.
 
+  Each `` object in the map accepts the following attributes:
+
+  - [**`create`**](#attr-timeouts-create): *(Optional `string`)*<a name="attr-timeouts-create"></a>
+
+    How long a create operation is allowed to take before being considered to have failed.
+
+  - [**`read`**](#attr-timeouts-read): *(Optional `string`)*<a name="attr-timeouts-read"></a>
+
+    How long a read operation is allowed to take before being considered to have failed.
+
+  - [**`update`**](#attr-timeouts-update): *(Optional `string`)*<a name="attr-timeouts-update"></a>
+
+    How long an update operation is allowed to take before being considered to have failed.
+
+  - [**`delete`**](#attr-timeouts-delete): *(Optional `string`)*<a name="attr-timeouts-delete"></a>
+
+    How long a delete operation is allowed to take before being considered to have failed.
+
+#### Module Configuration
+
+- [**`module_enabled`**](#var-module_enabled): *(Optional `bool`)*<a name="var-module_enabled"></a>
+
+  Specifies whether resources in the module will be created.
+
+  Default is `true`.
+
+- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
+
+  A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
+
+  Default is `[]`.
+
+  Example:
+
+  ```hcl
+  module_depends_on = [
+    google_network.network
+  ]
+  ```
+
 ## Module Outputs
 
 The following attributes are exported in the outputs of the module:
-
-- [**`module_enabled`**](#output-module_enabled): *(`bool`)*<a name="output-module_enabled"></a>
-
-  Whether this module is enabled.
 
 - [**`service`**](#output-service): *(`object(service)`)*<a name="output-service"></a>
 
